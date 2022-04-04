@@ -1,0 +1,44 @@
+.btn {
+   background: $primary-cyan;
+   border: none;
+   border-radius: 30px;
+   padding: 12px 35px;
+   margin: 20px;
+   font-size: 1rem;
+   font-family: inherit;
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+   &:hover {
+      background: lighten($primary-cyan, 20%);
+   }
+   @media (min-width: $breakpoint) {
+      margin: 20px 0;
+   }
+   &--square {
+      width: 100%;
+      border-radius: 4px;
+      margin: 0;
+      padding: 10px;
+      font-size: 0.95rem;
+      @media (min-width: $breakpoint) {
+         margin: 0 20px;
+         max-width: 200px;
+      }
+   }
+   &--small {
+      border-radius: 6px;
+      margin: 0 20px 10px;
+      padding: 10px 30px;
+      font-size: 0.8rem;
+      @media (min-width: $breakpoint) {
+         margin: 0 20px;
+      }
+   }
+   &--active {
+      background: $primary-violet;
+      &:hover {
+         background: lighten($primary-violet, 20%);
+      }
+   }
+}

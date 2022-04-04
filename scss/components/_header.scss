@@ -1,0 +1,26 @@
+.header {
+   position: relative;
+   background: white;
+   z-index: 10;
+}
+
+.header_wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   padding-top: 40px;
+   background: white;
+   @media (min-width: $breakpoint) {
+      padding: 20px;
+   }
+}
+
+.header_icon {
+   color: $dark-gray;
+   font-size: 34px;
+   cursor: pointer;
+   @media (min-width: $breakpoint) {
+      display: none;
+   }
+}

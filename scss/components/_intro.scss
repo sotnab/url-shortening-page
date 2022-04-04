@@ -1,0 +1,26 @@
+.intro_wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   @media (min-width: $breakpoint) {
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: left;
+   }
+}
+
+.intro_title {
+   @media (min-width: $breakpoint) {
+      font-size: 3rem;
+   }
+}
+
+.intro_img {
+   display: block;
+   width: 140%;
+   padding: 20px;
+   @media (min-width: $breakpoint) {
+      transform: translateX(10%);
+      width: 50%;
+   }
+}

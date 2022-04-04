@@ -1,0 +1,62 @@
+$breakpoint: 1000px;
+
+$primary-cyan: rgb(42, 207, 207);
+$primary-violet: rgb(59, 48, 84);
+
+$secondary-red: rgb(244, 110, 98);
+
+$light-gray: rgb(191, 191, 191);
+$dark-gray: rgb(158, 154, 167);
+$dark-blue: rgb(53, 50, 62);
+$dark-violet: rgb(35, 33, 39);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   font-size: 18px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   text-align: center;
+}
+
+p {
+   color: $dark-gray;
+   padding: 0 20px;
+   font-size: 0.9rem;
+   line-height: 1.6;
+   @media (min-width: $breakpoint) {
+      padding: 10px 0;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: $primary-violet;
+   margin: 16px 0;
+   line-height: 1.2;
+}
+
+h1 {
+   font-size: 2.6rem;
+}
+
+h2 {
+   font-size: 2.2rem;
+}
+
+h3 {
+   font-size: 1.4rem;
+}
+
+h4 {
+   font-size: 1.2rem;
+}

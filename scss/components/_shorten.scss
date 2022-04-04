@@ -1,0 +1,75 @@
+.shorten {
+   transform: translateY(-80px);
+   padding: 0 20px;
+}
+
+.shorten_wrapper {
+   background: url('/images/bg-shorten-mobile.svg') top right no-repeat;
+   background-color: $primary-violet;
+   border-radius: 12px;
+   padding: 20px;
+   @media (min-width: $breakpoint) {
+      background-image: url('/images/bg-shorten-desktop.svg');
+      margin: 20px auto;
+      padding: 40px;
+      display: flex;
+   }
+}
+
+.shorten_input {
+   border: none;
+   width: 100%;
+   border-radius: 4px;
+   padding: 10px 16px;
+   font-size: 0.9rem;
+   font-family: inherit;
+   color: $primary-violet;
+   margin-bottom: 14px;
+   &::placeholder {
+      opacity: 0.6;
+   }
+   @media (min-width: $breakpoint) {
+      margin-bottom: 0;
+   }
+}
+
+.shorten_links {
+   text-align: left;
+}
+
+.shorten_item {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 4px 0;
+   margin-top: 20px;
+   border-radius: 6px;
+   background: white;
+   font-size: 0.8rem;
+   @media (min-width: $breakpoint) {
+      padding: 10px;
+      flex-direction: row;
+      align-items: center;
+   }
+}
+
+.shorten_span {
+   border-bottom: 1px solid darken(white, 10%);
+   display: block;
+   padding: 8px 20px;
+   overflow: hidden;
+   @media (min-width: $breakpoint) {
+      border: none;
+   }
+}
+
+.shorten_link {
+   color: $primary-cyan;
+   text-decoration: none;
+   display: block;
+   padding: 10px 20px;
+   overflow: hidden;
+   @media (min-width: $breakpoint) {
+      margin-left: auto;
+   }
+}
